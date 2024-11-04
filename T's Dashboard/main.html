@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<title>HR Dashboard</title>
+<!-- Primary Meta Tags -->
+<meta name="description" content="..." />
+<meta name="keywords" content="..." />
+<link rel="icon" type="image/icon-x" href="assets/images/">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Third Party -->
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css"/>
+<link rel="stylesheet" href="assets/css/hover.css" />
+<!-- Custom styles -->
+<link rel="stylesheet" href="assets/css/style.css" />
+<link rel="stylesheet" href="assets/css/table.css" />
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://" />
+<meta property="og:title" content="..." />
+<meta property="og:description" content="..." />
+<meta property="og:image" content="https://" />
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://" />
+<meta property="twitter:title" content="..." />
+<meta property="twitter:description" content="..." />
+<meta property="twitter:image" content="https://" />
+<!-- fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+.sora {
+  font-family: "Sora", sans-serif;
+  font-style: normal;
+} 
+</style>
+</head>
+<body class="sora animate" oncontextmenu="false">
+<div class="container-fluid">
+ <div class="row">
+  <div class="col-md-3 for-desktop bg-grey" style="height: 140vh;"><!-- navigation -->
+   <div class="for-desktop" style="position: fixed; left: 35px; top: 0; width: calc(25% - 55px);">
+    <div class="mt-1 py-3">
+     <img src="assets/images/Logo.png">
+     <hr class="pt-3 mb-1">
+     <ul class="list-unstyled">
+      <li class="mb-2">
+
+       <div class="input-wrapper mb-3">
+        <img src="assets/images/search.svg" class="search-icon">
+        <input class="btn-search" type="text" placeholder="Search" aria-label="default input example">
+      </div>
+      
+      </li>
+      <li class="mb-2">
+       <button class="btn-nav btn-nav-active"><img src="assets/images/dashboard.svg">Dashboard</button>
+      </li>
+      <!---->
+      <li class="mb-2">
+       <button class="btn-nav"><img src="assets/images/inbox.svg">Inbox</button>
+      </li>
+      <!---->
+      <li class="mb-2">
+       <a href="employee.html" class="btn-nav" role="button" style="text-decoration: none;"><img src="assets/images/employee.svg">Employee</a>
+      </li>
+      <!---->
+      <li class="mb-2">
+       <button class="btn-nav"><img src="assets/images/attendance.svg">Attendance</button>
+      </li>
+      <!---->
+      <li class="mb-2">
+       <button class="btn-nav"><img src="assets/images/payroll.svg">Payroll</button>
+      </li>
+      <!---->
+      <li class="mb-2">
+       <button class="btn-nav"><img src="assets/images/recruitment.svg">Recruitment</button>
+      </li>
+      <!---->
+      <li class="mb-2">
+       <button class="btn-nav"><img src="assets/images/settings.svg">Settings</button>
+      </li>
+      <!---->
+     </ul>
+     
+    </div>
+    <div style="position: fixed; left: 25px; bottom: 25px; width: calc(25% - 35px);">
+     <div style="position: relative;">
+      <div class="toggle-container">
+       <div class="toggle-button">
+         <span class="light">Light<img class="ml-1" width="15px" src="assets/images/light.svg"></span>
+         <span class="dark">Dark<img class="ml-1" width="12px" src="assets/images/dark.svg"></span>
+         <div class="toggle-background"></div>
+       </div>
+     </div>
+     </div>
+     <div class="px-3">
+      <hr class="pb-2">
+     </div>
+      <!---->
+     <div class="media pl-2">
+      <img class="mr-3 my-1" src="assets/images/user.png">
+      <div class="media-body">
+        <h5 class="mt-0 fw-600 fs-14 mb-0">Adebakin Temitayo</h5>
+        <p class="mb-0 fs-14 fw-400">adebakintemitayo@hill.com</p>
+      </div>
+    </div>
+   </div>
+   <!---->
+   </div>
+   <!---->
+  </div>
+  <div class="col-md-12 for-mobile"><!--mobile-->
+
+   <nav class="navbar navbar-expand-md navbar-secondary sticky-top bg-grey navbar-light border-grey mt-4">
+    <a class="navbar-brand py-1" href="#!">
+      <img src="assets/images/Logo.png">
+    </a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbarCollapse">
+
+      <ul class="list-unstyled" style=" width: calc(100% - 1px);">
+        <li class="mb-2 mt-3">
+  
+         <div class="input-wrapper mb-3">
+          <img src="assets/images/search.svg" class="search-icon">
+          <input class="btn-search" type="text" placeholder="Search" aria-label="default input example">
+        </div>
+        
+        </li>
+        <li class="mb-2">
+         <button class="btn-nav btn-nav-active"><img src="assets/images/dashboard.svg">Dashboard</button>
+        </li>
+        <!---->
+        <li class="mb-2">
+         <button class="btn-nav"><img src="assets/images/inbox.svg">Inbox</button>
+        </li>
+        <!---->
+        <li class="mb-2">
+         <a href="employee.html" class="btn-nav" role="button" style="text-decoration: none;"><img src="assets/images/employee.svg">Employee</a>
+        </li>
+        <!---->
+        <li class="mb-2">
+         <button class="btn-nav"><img src="assets/images/attendance.svg">Attendance</button>
+        </li>
+        <!---->
+        <li class="mb-2">
+         <button class="btn-nav"><img src="assets/images/payroll.svg">Payroll</button>
+        </li>
+        <!---->
+        <li class="mb-2">
+         <button class="btn-nav"><img src="assets/images/recruitment.svg">Recruitment</button>
+        </li>
+        <!---->
+        <li class="mb-2">
+         <button class="btn-nav"><img src="assets/images/settings.svg">Settings</button>
+        </li>
+        <!---->
+       </ul>
+
+      <div>
+         <div class="toggle-container">
+          <div class="toggle-button">
+            <span class="light">Light<img class="ml-1" width="15px" src="assets/images/light.svg"></span>
+            <span class="dark">Dark<img class="ml-1" width="12px" src="assets/images/dark.svg"></span>
+            <div class="toggle-background"></div>
+          </div>
+        </div>
+
+        <div class="px-3">
+         <hr class="pb-2">
+        </div>
+
+      <div class="media pb-2 pl-2">
+        <img class="mr-3 my-1" src="assets/images/user.png">
+        <div class="media-body">
+          <h5 class="mt-0 fw-600 fs-14 mb-0">Adebakin Temitayo</h5>
+          <p class="mb-0 fs-14 fw-400">adebakintemitayo@hill.com</p>
+        </div>
+      </div>
+      <!---->
+    </div>
+  </nav>
+  </div>
+  <!---->
+  <div class="col-md-9 mt-3 pl-4"><!-- dashboard header -->
+    <div class="for-desktop">
+   <h5 class="mb-0 fw-600">Dashboard</h5>
+   <ul class="list-inline">
+     <li class="list-inline-item">
+       <p class="small mb-0">Last updated 8 August 2024</p>
+     </li>
+     <li class="list-inline-item float-right">
+      <a href="employee.html" class="btn-dash">
+        <img class="mr-1" src="assets/images/plus.svg">
+      <span class="small p-0">Add Employee</span>
+      </a>
+       <img class="ml-3" src="assets/images/menu.svg">
+     </li>
+   </ul>
+   <hr class="pt-2">
+   </div>
+
+   <div class="for-mobile">
+    <h5 class="mb-0 mt-3 fw-600">Dashboard</h5>
+
+      <p class="small mb-3">Last updated 8 August 2024</p>
+      <ul class="list-inline vertical-align pb-2">
+      <li class="list-inline-item">
+        <a href="employee.html" class="btn-dash">
+          <img class="mr-1" src="assets/images/plus.svg">
+        <span class="small p-0">Add Employee</span>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <img class="ml-1" src="assets/images/menu.svg">
+      </li>
+    </ul>
+
+    <hr class="pt-2 px-4">
+    </div>
+
+   <script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Function to initialize dropdowns
+  function initializeDropdowns() {
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
+    dropdownToggles.forEach(dropdownToggle => {
+      const icon = dropdownToggle.querySelector('.custom-dropdown-icon');
+
+      // Set the image source from the data-image attribute
+      if (dropdownToggle.dataset.image) {
+        icon.src = dropdownToggle.dataset.image;
+      }
+
+      // Change the text and keep the icon when an item is clicked
+      const dropdownItems = dropdownToggle.nextElementSibling.querySelectorAll('.dropdown-item');
+      dropdownItems.forEach(item => {
+        item.addEventListener('click', function() {
+          dropdownToggle.firstChild.nodeValue = this.textContent; // Change the text of the toggle
+          // Optional: Update the icon based on the selected item
+          // icon.src = 'path/to/another-icon.png'; // Uncomment and customize if needed
+        });
+      });
+    });
+  }
+
+  // Call the function to initialize all dropdowns
+  initializeDropdowns();
+});
+
+      </script>
+
+   <div class="row">
+    <div class="col-md-8"><!-- graph -->
+      <div class="row no-gutters"><!-- 3 columns-->
+       <div class="col-md-4 for-desktop pr-2">
+        <div class="border-grey px-3 pt-3 pb-2">
+          <p class="small text-light-grey">Total Employee</p>
+          <div class="h5 fw-700">220 <span class="fs-14 fw-500">People</span></div>
+          <hr class="my-2">
+          <div class="mb-0" style="display: flex; justify-content: space-between; align-items: end; position: relative;">
+            <div class="mb-0">
+              <div class="dropdown">
+                <a class="btn btn-white p-0 my-1 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                   This Month <img class="custom-dropdown-icon" src="assets/images/drop-Icon.svg">
+                </a>
+                <ul class="dropdown-menu fs-12" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">This Month</a></li>
+                  <li><a class="dropdown-item" href="#">Three Months</a></li>
+                  <li><a class="dropdown-item" href="#">Six Months</a></li>
+                </ul>
+              </div>
+
+              <span class="small mb-0 float-right" style="background-color: rgba(39, 174, 96, 0.1); border-radius: 100px; color: #34B36A; padding: 1px; position: absolute; right: 0; bottom: 5px;">+24%</span>
+            <div></div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---->
+      <div class="col-md-4 for-desktop px-2">
+       <div class="border-grey px-3 pt-3 pb-2">
+         <p class="small text-light-grey">Employee on Leave</p>
+         <div class="h5 fw-700">20 <span class="fs-14 fw-500">People</span></div>
+         <hr class="my-2">
+         <div class="mb-0" style="display: flex; justify-content: space-between; align-items: end; position: relative;">
+           <div class="mb-0">
+            <div class="dropdown">
+              <a class="btn btn-white p-0 my-1 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                 This Month <img class="custom-dropdown-icon" src="assets/images/drop-Icon.svg">
+              </a>
+              <ul class="dropdown-menu fs-12" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">This Month</a></li>
+                <li><a class="dropdown-item" href="#">Three Months</a></li>
+                <li><a class="dropdown-item" href="#">Six Months</a></li>
+              </ul>
+            </div>
+
+             <span class="small mb-0" style="background-color: rgba(235, 87, 87, 0.1); border-radius: 100px; color: #f57373; padding: 1px; position: absolute; right: 0; bottom: 5px;">-18%</span>
+             </div>
+           <div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <!---->
+     <div class="col-md-12 for-mobile px-0">
+      <div class="border-grey px-3 pt-3 pb-2">
+        <p class="small text-light-grey">Total Employee</p>
+        <div class="h5 fw-700">220 <span class="fs-14 fw-500">People</span></div>
+        <hr class="my-2">
+        <div class="mb-0" style="display: flex; justify-content: space-between; align-items: end; position: relative;">
+          <div class="mb-0">
+           <div class="dropdown">
+             <a class="btn btn-white p-0 my-1 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                This Month <img class="custom-dropdown-icon" src="assets/images/drop-Icon.svg">
+             </a>
+             <ul class="dropdown-menu fs-12" aria-labelledby="dropdownMenuLink">
+               <li><a class="dropdown-item" href="#">This Month</a></li>
+               <li><a class="dropdown-item" href="#">Three Months</a></li>
+               <li><a class="dropdown-item" href="#">Six Months</a></li>
+             </ul>
+           </div>
+
+           <span class="small mb-0 float-right" style="background-color: rgba(39, 174, 96, 0.1); border-radius: 100px; color: #34B36A; padding: 1px; position: absolute; right: 0; bottom: 5px;">+24%</span>
+            </div>
+          <div>
+          </div>
+        </div>
+      </div>
+      <!---->
+      <div class="border-grey px-3 pt-3 pb-2" style="margin: 30px 0 30px 0;">
+        <p class="small text-light-grey">Employee on Leave</p>
+        <div class="h5 fw-700">20 <span class="fs-14 fw-500">People</span></div>
+        <hr class="my-2">
+        <div class="mb-0" style="display: flex; justify-content: space-between; align-items: end; position: relative;">
+          <div class="mb-0">
+           <div class="dropdown">
+             <a class="btn btn-white p-0 my-1 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                This Month <img class="custom-dropdown-icon" src="assets/images/drop-Icon.svg">
+             </a>
+             <ul class="dropdown-menu fs-12" aria-labelledby="dropdownMenuLink">
+               <li><a class="dropdown-item" href="#">This Month</a></li>
+               <li><a class="dropdown-item" href="#">Three Months</a></li>
+               <li><a class="dropdown-item" href="#">Six Months</a></li>
+             </ul>
+           </div>
+
+            <span class="small mb-0" style="background-color: rgba(235, 87, 87, 0.1); border-radius: 100px; color: #f57373; padding: 1px; position: absolute; right: 0; bottom: 5px;">-18%</span>
+            </div>
+          <div>
+          </div>
+        </div>
+      </div>
+      <!---->
+      <div class="border-grey px-3 pt-3 pb-2 mb-3">
+        <p class="small text-light-grey">New Hires</p>
+        <div class="h5 fw-700">80 <span class="fs-14 fw-500">People</span></div>
+        <hr class="my-2">
+        <div class="mb-0" style="display: flex; justify-content: space-between; align-items: end; position: relative;">
+          <div class="mb-0">
+           <div class="dropdown">
+             <a class="btn btn-white p-0 my-1 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                This Month <img class="custom-dropdown-icon" src="assets/images/drop-Icon.svg">
+             </a>
+             <ul class="dropdown-menu fs-12" aria-labelledby="dropdownMenuLink">
+               <li><a class="dropdown-item" href="#">This Month</a></li>
+               <li><a class="dropdown-item" href="#">Three Months</a></li>
+               <li><a class="dropdown-item" href="#">Six Months</a></li>
+             </ul>
+           </div>
+
+           <span class="small mb-0 float-right" style="background-color: rgba(39, 174, 96, 0.1); border-radius: 100px; color: #34B36A; padding: 1px; position: absolute; right: 0; bottom: 5px;">+20%</span>
+            </div>
+          <div>
+          </div>
+        </div>
+      </div>
+      <!---->
+    </div>
+    <!---->
+     <div class="col-md-4 for-desktop pl-2">
+      <div class="border-grey px-3 pt-3 pb-2">
+        <p class="small text-light-grey">New Hires</p>
+        <div class="h5 fw-700">80 <span class="fs-14 fw-500">People</span></div>
+        <hr class="my-2">
+        <div class="mb-0" style="display: flex; justify-content: space-between; align-items: end; position: relative;">
+          <div class="mb-0">
+              <div class="dropdown">
+                <a class="btn btn-white p-0 my-1 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                   This Month <img class="custom-dropdown-icon" src="assets/images/drop-Icon.svg">
+                </a>
+                <ul class="dropdown-menu fs-12" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">This Month</a></li>
+                  <li><a class="dropdown-item" href="#">Three Months</a></li>
+                  <li><a class="dropdown-item" href="#">Six Months</a></li>
+                </ul>
+              </div>
+
+            <span class="small mb-0 float-right" style="background-color: rgba(39, 174, 96, 0.1); border-radius: 100px; color: #34B36A; padding: 1px; position: absolute; right: 0; bottom: 5px;">+20%</span>
+          <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---->
+    <div class="col-md-12 mt-3">
+     <div class="border-grey p-3">
+      <div class="for-desktop">
+      <ul class="list-inline" style="padding-bottom: 5px;">
+        <li class="list-inline-item">
+          <h6 class="mb-0 fw-600">Employee Performance Indicator</h6>
+        </li>
+        <li class="list-inline-item float-right">
+          <div class="d-flex">
+            <div class="dropdown">
+              <a class="btn btn-white dropdown-toggle border-grey pb-1 pl-2 pr-0" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                This Month <img class="custom-dropdown-icon" src="assets/images/drop-Icon.svg">
+              </a>
+              <ul class="dropdown-menu fs-12" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">This Month</a></li>
+                <li><a class="dropdown-item" href="#">Three Months</a></li>
+                <li><a class="dropdown-item" href="#">Six Months</a></li>
+              </ul>
+            </div>
+          <!---->
+          <button class="btn-dash ml-2">
+            <span class="small p-0">See All</span>
+          </button></div>
+        </li>
+      </ul>
+    </div>
+    <!-- mobile -->
+    <div class="for-mobile">
+      <ul class="list-inline" style="padding-bottom: 5px;">
+        <li class="list-inline-item">
+          <h6 class="mb-3 fw-600">Employee Performance Indicator</h6>
+        </li>
+        <li class="list-inline-item">
+          <div class="d-flex">
+            <div class="dropdown">
+              <a class="btn btn-white dropdown-toggle border-grey pb-1 pl-2 pr-0" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                This Month <img class="custom-dropdown-icon" src="assets/images/drop-Icon.svg">
+              </a>
+              <ul class="dropdown-menu fs-12" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">This Month</a></li>
+                <li><a class="dropdown-item" href="#">Three Months</a></li>
+                <li><a class="dropdown-item" href="#">Six Months</a></li>
+              </ul>
+            </div>
+          <!---->
+          <button class="btn-dash ml-2">
+            <span class="small p-0">See All</span>
+          </button></div>
+        </li>
+      </ul>
+    </div>
+    <!---->
+
+    <hr class="pt-2 mb-2">
+    <style>
+     /* Style specific to this table */
+     .custom-progress-table th {
+       width: 1%;
+       white-space: nowrap; /* Prevent expansion */
+     }
+   
+     .custom-progress-table td {
+       white-space: nowrap;
+     }
+   
+     /* Custom styles for progress bars in this table */
+     .custom-progress-table .progress {
+       height: 1.3rem; /* Adjust height */
+       margin-bottom: 15px;
+     }
+   
+     .custom-progress-table .progress-bar {
+       transition: width 0.6s ease; /* Smooth transition */
+     }
+   </style>
+   
+   <!-- Updated table with custom class -->
+   <div class="bootstrap-table">
+   <div class="table-responsive">
+   <table class="table table-borderless b-n table-sm align-middle custom-progress-table mb-0">
+     <tbody>
+       <tr class="mt-2">
+         <td class="pl-0" style="width: 150px;">
+           <span class="fs-14 fw-400">Ronald Richards</span>
+         </td>
+         <td colspan="3">
+           <div class="progress mt-0">
+             <div class="progress-bar bg-cyan" role="progressbar" style="width: 20%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+             <div class="progress-bar bg-orange" role="progressbar" style="width: 15%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+             <div class="progress-bar bg-lilac" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+           </div>
+         </td>
+       </tr>
+       <!---->
+      <tr class="mt-2">
+       <td class="pl-0" style="width: 150px;">
+         <span class="fs-14 fw-400">Darrell Steward</span>
+       </td>
+       <td colspan="3">
+         <div class="progress mt-0">
+          <div class="progress-bar bg-cyan" role="progressbar" style="width: 25%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="progress-bar bg-orange" role="progressbar" style="width: 20%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="progress-bar bg-lilac" role="progressbar" style="width: 30%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+         </div>
+       </td>
+     </tr>
+     <!---->
+     <tr class="mt-2">
+      <td class="pl-0" style="width: 150px;">
+        <span class="fs-14 fw-400">Annette Black</span>
+      </td>
+      <td colspan="3">
+        <div class="progress mt-0">
+         <div class="progress-bar bg-cyan" role="progressbar" style="width: 30%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+         <div class="progress-bar bg-orange" role="progressbar" style="width: 25%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+         <div class="progress-bar bg-lilac" role="progressbar" style="width: 30%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </td>
+    </tr>
+    <!---->
+     <tr class="mt-2">
+      <td class="pl-0" style="width: 150px;">
+        <span class="fs-14 fw-400">Courtney Henry</span>
+      </td>
+      <td colspan="3">
+        <div class="progress mt-0">
+         <div class="progress-bar bg-cyan" role="progressbar" style="width: 30%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+         <div class="progress-bar bg-orange" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+         <div class="progress-bar bg-lilac" role="progressbar" style="width: 30%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </td>
+    </tr>
+    <!---->
+    <tr class="mt-2">
+     <td class="pl-0" style="width: 150px;">
+       <span class="fs-14 fw-400">Kathryn Murphy</span>
+     </td>
+     <td colspan="3">
+       <div class="progress mt-0">
+        <div class="progress-bar bg-cyan" role="progressbar" style="width: 40%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar bg-orange" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar bg-lilac" role="progressbar" style="width: 17%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+       </div>
+     </td>
+   </tr>
+   <!---->
+   <tr class="mt-2">
+    <td class="pl-0" style="width: 150px;">
+      <span class="fs-14 fw-400">Savannah Nguyen</span>
+    </td>
+    <td colspan="3">
+      <div class="progress mt-0">
+       <div class="progress-bar bg-cyan" role="progressbar" style="width: 40%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+       <div class="progress-bar bg-orange" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+       <div class="progress-bar bg-lilac" role="progressbar" style="width: 17%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+    </td>
+  </tr>
+  <!---->
+  <tr class="mt-2 pb-0">
+   <td class="pl-0" style="width: 150px;"></td>
+   <td class="pb-0" colspan="3">
+    <hr class="mt-1 pb-2">
+     <div class="fs-14 fw-400 text-light-grey" style="display: flex; justify-content: space-between;">
+      <span>0%</span>
+      <span>20%</span>
+      <span>40%</span>
+      <span>60%</span>
+      <span>80%</span>
+      <span>100%</span>
+     </div>
+     <div class="float-right mt-3 mb-0">
+      <p class="small mb-0">
+        <span class="mr-3"><img class="mr-2" src="assets/images/cyan-icon.svg">Performance</span>
+        <span class="mr-3"><img class="mr-2" src="assets/images/orange-icon.svg">Task</span>
+        <span class=""><img class="mr-2" src="assets/images/lilac-icon.svg">Attendance</span>
+      </p>
+    </div>
+   </td>
+ </tr>
+ <!---->
+     </tbody>
+   </table></div></div>
+   
+    <!---->
+    </div>
+    <!----></div>
+      </div>
+    </div>
+    <!---->
+    <div class="col-md-4"><!-- calendar -->
+      <div class="for-mobile" style="padding-top: 30px;"></div>
+     <div class="p-3 border-grey">
+
+      <div class=""><!-- calendar -->
+        <ul class="list-inline mb-3">
+          <li class="list-inline-item">
+            <p class="fw-400 mb-0 fs-14 mt-1">Schedule</p>
+          </li>
+          <li class="list-inline-item float-right">
+            <button class="btn-dash">
+              <img class="mr-1" src="assets/images/calendar-icon.svg">
+            <span class="small p-0">View Calendar</span></button>
+          </li>
+        </ul>
+
+<!-- Month and Year Navigation -->
+<div id="month-slider" class="bg-cal border-rd" style="display: flex; justify-content: space-between; align-items: center;">
+ <div id="arrow-left-month"><img src="assets/images/btn-arrow-left.svg"></div>
+ <div id="month-label" class="small fw-500 mb-0">August, 2024</div>
+ <div id="arrow-right-month"><img src="assets/images/btn-arrow-right.svg"></div>
+</div>
+
+<div class="mt-2 mb-1 days-slider" style="display: flex; justify-content: space-between; align-items: center;">
+ <div id="arrow-left-day"><img src="assets/images/btn-arrow-left.svg"></div>
+ <div class="p-1 text-center day">
+   <p class="fs-12 text-light-grey mb-0">Mon</p>
+   <p class="mb-0">01</p>
+ </div>
+ <div class="p-1 text-center day">
+   <p class="fs-12 text-light-grey mb-0">Tue</p>
+   <p class="mb-0">02</p>
+ </div>
+ <div class="p-1 text-center day bg-cyan rounded">
+   <p class="fs-12 text-white mb-0">Wed</p>
+   <p class="mb-0 text-light">03</p>
+ </div>
+ <div class="p-1 text-center day">
+   <p class="fs-12 text-light-grey mb-0">Thu</p>
+   <p class="mb-0">04</p>
+ </div>
+ <div class="p-1 text-center day">
+   <p class="fs-12 text-light-grey mb-0">Fri</p>
+   <p class="mb-0">05</p>
+ </div>
+ <div id="arrow-right-day"><img src="assets/images/btn-arrow-right.svg"></div>
+</div>
+
+<style>
+ .days-slider {
+   display: flex;
+   overflow: hidden;
+   width: 100%;
+   justify-content: space-between;
+   padding: 0 10px;
+ }
+
+ .day {
+   flex: 1;
+   padding: 1rem;
+   text-align: center;
+   min-width: 0;
+ }
+</style>
+
+<script>
+const months = [
+ { name: "January", days: 31 },
+ { name: "February", days: 29 }, // Leap year
+ { name: "March", days: 31 },
+ { name: "April", days: 30 },
+ { name: "May", days: 31 },
+ { name: "June", days: 30 },
+ { name: "July", days: 31 },
+ { name: "August", days: 31 },
+ { name: "September", days: 30 },
+ { name: "October", days: 31 },
+ { name: "November", days: 30 },
+ { name: "December", days: 31 }
+];
+
+let currentMonthIndex = 7; // Start with August
+let currentDay = 1;
+let totalDaysInMonth = months[currentMonthIndex].days;
+const weekdays = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
+let currentWeekStart = 1; // First day of the current week
+
+// Function to update the month display
+function updateMonth() {
+ document.getElementById("month-label").textContent = `${months[currentMonthIndex].name}, 2024`;
+ totalDaysInMonth = months[currentMonthIndex].days;
+}
+
+// Function to update the displayed week
+function updateWeek() {
+ const dayElements = document.querySelectorAll('.day');
+ let displayDay = currentWeekStart;
+ 
+ for (let i = 0; i < 5; i++) {
+   // If the display day goes past the total days in the month
+   if (displayDay > totalDaysInMonth) {
+     // Move to next month
+     currentMonthIndex = (currentMonthIndex + 1) % 12;
+     updateMonth();
+     displayDay = 1; // Reset to the first day of the next month
+   } else if (displayDay < 1) {
+     // Move to the previous month
+     currentMonthIndex = (currentMonthIndex === 0) ? 11 : currentMonthIndex - 1;
+     updateMonth();
+     totalDaysInMonth = months[currentMonthIndex].days;
+     displayDay = totalDaysInMonth; // Set to the last day of the previous month
+   }
+
+   dayElements[i].querySelector('p:nth-child(1)').textContent = weekdays[i]; // Day of the week
+   dayElements[i].querySelector('p:nth-child(2)').textContent = displayDay; // Date of the day
+   displayDay++; // Move to the next day
+ }
+
+ // Update the start of the next week
+ currentWeekStart += 5;
+
+ // If the next week crosses into a new month, adjust the day count
+ if (currentWeekStart > totalDaysInMonth) {
+   currentWeekStart = 1; // Start at the beginning of the new month
+ }
+}
+
+// Back button logic for week slider
+document.getElementById('arrow-left-day').addEventListener('click', () => {
+ currentWeekStart -= 5; // Go back by one week
+ if (currentWeekStart < 1) {
+   // Move to the previous month
+   currentMonthIndex = (currentMonthIndex === 0) ? 11 : currentMonthIndex - 1;
+   totalDaysInMonth = months[currentMonthIndex].days;
+   updateMonth();
+   currentWeekStart = totalDaysInMonth - 4; // Adjust the week start to the end of the previous month
+ }
+ updateWeek();
+});
+
+// Next button logic for week slider
+document.getElementById('arrow-right-day').addEventListener('click', () => {
+ updateWeek(); // Move forward by one week
+});
+
+// Back button logic for month slider
+document.getElementById('arrow-left-month').addEventListener('click', () => {
+ currentMonthIndex = (currentMonthIndex === 0) ? 11 : currentMonthIndex - 1;
+ updateMonth();
+ currentWeekStart = 1; // Reset to the first week of the new month
+ updateWeek();
+});
+
+// Next button logic for month slider
+document.getElementById('arrow-right-month').addEventListener('click', () => {
+ currentMonthIndex = (currentMonthIndex + 1) % 12;
+ updateMonth();
+ currentWeekStart = 1; // Reset to the first week of the new month
+ updateWeek();
+});
+
+// Initial load
+updateMonth();
+updateWeek();
+</script>
+
+
+        <hr class="mb-0 mt-0">
+      </div>
+      <!---->
+      <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+       <li class="nav-item">
+         <a class="nav-link text-center active fs-14 text-light-grey" data-toggle="tab" href="#tab1" role="tab" aria-controls="home" aria-expanded="true">Upcoming</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link text-center fs-14 text-light-grey" data-toggle="tab" href="#tab2" role="tab" aria-controls="profile">Completed</a>
+       </li>
+     </ul>
+
+     <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="1-tab"><!-- tab 1-->
+       <div class="border-grey mt-3 p-3"><!-- meet -->
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item">
+            <h6 class="fw-400 mb-0">Meeting with IT Team</h6>
+          </li>
+          <li class="list-inline-item float-right">
+            <img src="assets/images/menu-h.svg">
+          </li>
+        </ul>
+        <div class="pt-0 text-light-grey fs-14"><img class="mr-1" src="assets/images/meet-icon.svg"> <span>Google Meet</span></div>
+        <hr class="my-2">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item">
+            <p class="fw-400 mb-0 fs-14 fw-500">11:00 - 12:30pm(GMT+1)</p>
+          </li>
+          <li class="list-inline-item float-right">
+            <img src="assets/images/meetees.png">
+          </li>
+        </ul>
+      </div>
+      <!---->
+      <div class="border-grey my-3 p-3">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item">
+            <h6 class="fw-400 mb-0">Training with Marketing</h6>
+          </li>
+          <li class="list-inline-item float-right">
+            <img src="assets/images/menu-h.svg">
+          </li>
+        </ul>
+        <div class="pt-0 text-light-grey fs-14"><img class="mr-1" src="assets/images/meet-icon.svg"> <span>Google Meet</span></div>
+        <hr class="my-2">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item">
+            <p class="fw-400 mb-0 fs-14 fw-500">2:00 - 2:30pm(GMT+1)</p>
+          </li>
+          <li class="list-inline-item float-right">
+            <img src="assets/images/meetees.png">
+          </li>
+        </ul>
+      </div>
+      <!---->
+      <div class="border-grey p-3">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item">
+            <h6 class="fw-400 mb-0">Meeting with Stakeholders</h6>
+          </li>
+          <li class="list-inline-item float-right">
+            <img src="assets/images/menu-h.svg">
+          </li>
+        </ul>
+        <div class="pt-0 text-light-grey fs-14"><img class="mr-1" src="assets/images/conference-icon.svg"> <span>Conference Room</span></div>
+        <hr class="my-2">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item">
+            <p class="fw-400 mb-0 fs-14 fw-500">4:00 - 5:00pm(GMT+1)</p>
+          </li>
+          <li class="list-inline-item float-right">
+            <img src="assets/images/meetees.png">
+          </li>
+        </ul>
+      </div>
+      <!---->
+       </div>
+       <!---->
+       <div class="tab-pane fade show grayscale" id="tab2" role="tabpanel" aria-labelledby="2-tab" style="filter: opacity(60%);"><!-- tab 2-->
+        <div class="border-grey mt-3 p-3" ><!-- meet -->
+         <ul class="list-inline mb-0">
+           <li class="list-inline-item">
+             <h6 class="fw-400 mb-0">Meeting with IT Team</h6>
+           </li>
+           <li class="list-inline-item float-right">
+             <img src="assets/images/menu-h.svg">
+           </li>
+         </ul>
+         <div class="pt-0 text-light-grey fs-14"><img class="mr-1" src="assets/images/meet-icon.svg"> <span>Google Meet</span></div>
+         <hr class="my-2">
+         <ul class="list-inline mb-0">
+           <li class="list-inline-item">
+             <p class="fw-400 mb-0 fs-14 fw-500">11:00 - 12:30pm(GMT+1)</p>
+           </li>
+           <li class="list-inline-item float-right">
+             <img src="assets/images/meetees.png">
+           </li>
+         </ul>
+       </div>
+       <!---->
+       <div class="border-grey my-3 p-3">
+         <ul class="list-inline mb-0">
+           <li class="list-inline-item">
+             <h6 class="fw-400 mb-0">Training with Marketing</h6>
+           </li>
+           <li class="list-inline-item float-right">
+             <img src="assets/images/menu-h.svg">
+           </li>
+         </ul>
+         <div class="pt-0 text-light-grey fs-14"><img class="mr-1" src="assets/images/meet-icon.svg"> <span>Google Meet</span></div>
+         <hr class="my-2">
+         <ul class="list-inline mb-0">
+           <li class="list-inline-item">
+             <p class="fw-400 mb-0 fs-14 fw-500">2:00 - 2:30pm(GMT+1)</p>
+           </li>
+           <li class="list-inline-item float-right">
+             <img src="assets/images/meetees.png">
+           </li>
+         </ul>
+       </div>
+       <!---->
+       <div class="border-grey p-3">
+         <ul class="list-inline mb-0">
+           <li class="list-inline-item">
+             <h6 class="fw-400 mb-0">Meeting with Stakeholders</h6>
+           </li>
+           <li class="list-inline-item float-right">
+             <img src="assets/images/menu-h.svg">
+           </li>
+         </ul>
+         <div class="pt-0 text-light-grey fs-14"><img class="mr-1" src="assets/images/conference-icon.svg"> <span>Conference Room</span></div>
+         <hr class="my-2">
+         <ul class="list-inline mb-0">
+           <li class="list-inline-item">
+             <p class="fw-400 mb-0 fs-14 fw-500">4:00 - 5:00pm(GMT+1)</p>
+           </li>
+           <li class="list-inline-item float-right">
+             <img src="assets/images/meetees.png">
+           </li>
+         </ul>
+       </div>
+       <!---->
+        </div>
+      </div>
+
+      <!---->
+    </div>
+    </div>
+    <!---->
+    <div class="col-md-12 mb-3" ><!-- table -->
+      <div class="for-mobile" style="padding-top: 15px;"></div>
+     <div class="p-3 border-grey mt-3">
+
+      <div class="">
+        <div class="for-desktop">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <p class="mb-0 h5">Employee</p>
+            </li>
+            <!---->
+            <li class="list-inline-item float-right">
+              <ul class="list-inline">
+                <li class="list-inline-item mr-1">
+                  <div class="input-wrapper">
+                   <img src="assets/images/search.svg" class="search-icon">
+                   <input class="btn-search-2" type="text" placeholder="Search" aria-label="default input example">
+                 </div></li>
+                  <!---->
+                  <li class="list-inline-item mx-1">
+                  <button class="btn-dash">
+                    <img class="mr-1" src="assets/images/filter.svg">
+                  <span class="small p-0">Filter</span>
+                 </button></li>
+                  <!---->
+                  <li class="list-inline-item ml-1">
+                  <button class="btn-dash">
+                    <img class="mr-1" src="assets/images/export.svg">
+                  <span class="small p-0">Export</span>
+                 </button>
+                </li>
+              </ul>
+            </li>
+            <!---->
+          </ul>
+      </div>
+      <!---->
+        <div class="for-mobile">
+          <div>
+            <p class="mb-3 h5">Employee</p>
+          </div>
+      
+          <div>
+            <div>
+              <div class="input-wrapper">
+               <img src="assets/images/search.svg" class="search-icon">
+               <input class="btn-search-2" type="text" placeholder="Search" aria-label="default input example">
+             </div></div>
+              <!---->
+              <ul class="list-inline" style="margin-top: 12px;">
+            <li class="list-inline-item mr-1">
+            <button class="btn-dash">
+              <img class="mr-1" src="assets/images/filter.svg">
+            <span class="small p-0">Filter</span>
+           </button></li>
+            <!---->
+            <li class="list-inline-item ml-1">
+            <button class="btn-dash">
+              <img class="mr-1" src="assets/images/export.svg">
+            <span class="small p-0">Export</span>
+           </button>
+          </li>
+        </ul>
+       </div>
+     </div>
+
+    <!---- <div class="bulma-table d-none">
+     <div class="table-responsive border-grey">
+      <table class="table is-bordereds">
+        <thead>
+          <tr>
+            <th>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </th>
+            <th>
+              <p class="mb-0 fs-14">Name <img class="ml-2" src="assets/images/updown-icon.svg"></p>
+            </th>
+            <th>
+              <p class="mb-0 fs-14">Employee ID <img class="ml-2" src="assets/images/updown-icon.svg"></p>
+            </th>
+            <th>
+              <p class="mb-0 fs-14">Department <img class="ml-2" src="assets/images/updown-icon.svg"></p>
+            </th>
+            <th>
+              <p class="mb-0 fs-14">Status <img class="ml-2" src="assets/images/updown-icon.svg"></p>
+            </th>
+            <th></th>
+          </tr>
+        </thead>
+        <thead>
+          <tr>
+            <th>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </th>
+            <th>
+              <div class="media">
+                <img class="mr-3 my-1" src="assets/images/user.png">
+                <div class="media-body">
+                  <h5 class="mt-0 fw-600 fs-14 mb-0">Adebakin Temitayo</h5>
+                  <p class="mb-0 fs-14 fw-400">adebakintemitayo@hill.com</p>
+                </div>
+              </div>
+            </th>
+            <th>Hill245652</th>
+            <th>Product</th>
+            <th>              
+              <div class="alert alert-green d-inline-block px-1 px-2 py-1 fs-14" role="alert">Active</div>
+            </th>
+            <th>
+              <td><img src="assets/images/menu.svg"></td>
+            </th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <th>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </th>
+            <th>
+              <div class="media">
+                <img class="mr-3 my-1" src="assets/images/user.png">
+                <div class="media-body">
+                  <h5 class="mt-0 fw-600 fs-14 mb-0">Adebakin Temitayo</h5>
+                  <p class="mb-0 fs-14 fw-400">adebakintemitayo@hill.com</p>
+                </div>
+              </div>
+            </th>
+            <th>Hill245652</th>
+            <th>Product</th>
+            <th>              
+              <div class="alert alert-green d-inline-block px-1 px-2 py-1 fs-14" role="alert">Active</div>
+            </th>
+            <th>
+              <td><img src="assets/images/menu.svg"></td>
+            </th>
+          </tr>
+        </tfoot>
+      </table> -->
+
+      <div class="table-responsive border-grey">
+      <table class="table mb-0">
+        <thead class="table-light">
+          <tr>
+            <th scope="col" style="border-top-left-radius: 8px;">              
+              <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1"></label>
+            </div>
+            </th>
+            <th scope="col">
+              <p class="mb-0 fs-14">Name <img class="ml-2" src="assets/images/updown-icon.svg"></p>
+            </th>
+            <th scope="col">
+              <p class="mb-0 fs-14">Employee ID <img class="ml-2" src="assets/images/updown-icon.svg"></p>
+            </th>
+            <th scope="col">
+              <p class="mb-0 fs-14">Department <img class="ml-2" src="assets/images/updown-icon.svg"></p>
+            </th>
+            <th scope="col">
+              <p class="mb-0 fs-14">Status <img class="ml-2" src="assets/images/updown-icon.svg"></p>
+            </th>
+            <th scope="col" style="border-top-right-radius: 8px;">
+              <!---->
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="align-middle" scope="row">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </th>
+            <td class="align-middle">
+              <div class="media">
+                <img class="mr-3 my-1" src="assets/images/user.png">
+                <div class="media-body">
+                  <h5 class="mt-0 fw-600 fs-14 mb-0">Adebakin Temitayo</h5>
+                  <p class="mb-0 fs-14 fw-400">adebakintemitayo@hill.com</p>
+                </div>
+              </div>
+            </td>
+            <td class="align-middle">Hill245652</td>
+            <td class="align-middle">Product</td>
+            <td class="align-middle">
+              <span class="alert alert-green px-2 py-1 fs-14" role="alert">Active</span>
+            </td>
+            <td class="align-middle"><img src="assets/images/menu.svg"></td>
+          </tr>
+          <!---->
+          <tr>
+            <th class="align-middle" scope="row" style="border-bottom: none">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </th>
+            <td class="align-middle" style="border-bottom: none">
+              <div class="media">
+                <img class="mr-3 my-1" src="assets/images/user.png">
+                <div class="media-body">
+                  <h5 class="mt-0 fw-600 fs-14 mb-0">Adebakin Temitayo</h5>
+                  <p class="mb-0 fs-14 fw-400">adebakintemitayo@hill.com</p>
+                </div>
+              </div>
+            </td>
+            <td class="align-middle" style="border-bottom: none">Hill245652</td>
+            <td class="align-middle" style="border-bottom: none">Engineering</td>
+            <td class="align-middle" style="border-bottom: none">
+              <span class="alert alert-green px-2 py-1 fs-14" role="alert">Active</span>
+            </td>
+            <td class="align-middle" style="border-bottom: none"><img src="assets/images/menu.svg"></td>
+          </tr>
+        </tbody>
+      </table>
+      <!----></div>
+     </div>
+    <!---->
+   </div>
+  </div>
+  <!---->
+ </div>
+</div>
+
+<!--<script>
+const toggleButton = document.querySelector('.toggle-button');
+
+toggleButton.addEventListener('click', () => {
+  toggleButton.classList.toggle('dark-mode');
+  
+  document.body.classList.toggle('dark-mode');
+  
+  const elementsToToggle = document.querySelectorAll('.border-grey, .text-light-grey, .btn-nav, .btn-nav-active .bg-grey, .bg-cal, .arrow-right-days');
+  elementsToToggle.forEach(element => {
+    element.classList.toggle('dark-mode');
+  });
+});
+</script>-->
+
+<script>
+const toggleButtons = document.querySelectorAll('.toggle-button');
+
+toggleButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Toggle dark mode class on the entire body
+    document.body.classList.toggle('dark-mode');
+
+    // Toggle dark mode class on all elements that need it
+    const elementsToToggle = document.querySelectorAll('.border-grey, .text-light-grey, .btn-nav, .btn-nav-active, .bg-grey, .bg-cal, .arrow-right-days');
+    elementsToToggle.forEach(element => {
+      element.classList.toggle('dark-mode');
+    });
+
+    // Toggle dark mode class on the button itself
+    toggleButtons.forEach(btn => btn.classList.toggle('dark-mode'));
+  });
+});
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- Other JavaScript -->
+<script src="assets/js/bootstrap.bundle.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="assets/js/popper.js"></script>
+<script src="assets/js/jquery.easing.js"></script>
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+<script src="assets/js/wow.min.js"></script>
+<script> new WOW().init();</script>
+<!-- Plugins -->
+ <script src=""></script>
+</body>
+</html>

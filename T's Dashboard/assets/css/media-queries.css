@@ -1,0 +1,144 @@
+/* media-queries.css */
+
+/* Mobile-first approach */
+/* Default styles for mobile devices */
+
+.element-hidden-mobile {
+  display: none !important;
+}
+
+.content-block-mobile {
+  display: block !important;
+}
+
+.p-mobile {
+  padding: 10px !important;
+}
+
+.h5-mobile {
+  font-size: 0.8em !important; /* Adjust as needed */
+}
+
+.h2-mobile {
+  font-size: 1.5em !important; /* Adjust as needed */
+}
+
+.h1-mobile {
+  font-size: 2em !important; /* Adjust as needed */
+}
+
+.text-center-mobile {
+  text-align: center !important;
+}
+
+.pt-5-mobile {
+  padding-top: 3rem !important;
+}
+
+.mt-5-mobile {
+  margin-top: 3rem !important;
+}
+
+.pb-5-mobile {
+  padding-bottom: 3rem !important;
+}
+
+.mb-5-mobile {
+  margin-bottom: 3rem !important;
+}
+
+/* Media queries for desktop devices */
+
+@media (min-width: 768px) {
+  .element-hidden-desktop {
+      display: none !important;
+  }
+
+  .content-inline-desktop {
+      display: inline !important;
+  }
+
+  /* Reset mobile-specific styles for larger screens */
+  .element-hidden-mobile {
+      display: block !important;
+  }
+
+  .content-block-mobile {
+      display: inline !important;
+  }
+
+  .p-mobile {
+      padding: 0 !important;
+  }
+
+  .h5-mobile {
+      font-size: inherit !important;
+  }
+
+  .h2-mobile {
+      font-size: inherit !important;
+  }
+
+  .h1-mobile {
+      font-size: inherit !important;
+  }
+
+  .text-center-mobile {
+      text-align: left !important;
+  }
+
+  .pt-5-mobile {
+      padding-top: 0 !important;
+  }
+
+  .mt-5-mobile {
+      margin-top: 0 !important;
+  }
+
+  .pr-5-mobile {
+      padding-right: 2.5rem !important;
+  }
+
+  .mb-5-mobile {
+      margin-bottom: 0 !important;
+  }
+}
+.mb-5-mobile {
+  margin-bottom: 3rem !important;
+}
+
+.list-down {
+  display: flex; 
+}
+
+@media (min-width: 768px) {
+  .list-down {
+      display: block;
+  }
+}
+.show-sm-md {
+  display: contents; 
+}
+
+@media (max-width: 768px) {
+  .show-sm-md {
+    display: none;
+  }
+}
+.show-lg {
+  display: contents; 
+}
+
+@media (max-width: 768px) {
+  .show-lg {
+    display: none;
+  }
+}
+@media (max-width: 767.98px) {
+  .list-down {
+    display: none;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
